@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:import/warnings",
+    "prettier"
+  ],
+  "ignorePatterns": ["*.config.js"],
+  // eslintに関するルールを記述
+  "rules": {
+    // import の順番をルール化
+    // 参考：https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ]
+  }
+}
